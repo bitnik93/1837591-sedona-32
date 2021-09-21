@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Сысоев](https://up.htmlacademy.ru/htmlcss/32/user/1837591).
-* Наставник: [Михаил Данюшин] (https://htmlacademy.ru/profile/id225742).
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742).
 
 ---
 
