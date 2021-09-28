@@ -9,39 +9,41 @@
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a class="navigation-link" href="main.html">Главная</a>
+                        <a class="navigation-link navigation-link-current">Главная</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="about-sedona.html">О Седоне</a>
-                    </li><li class="navigation-item">
-                        <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
+                        <a class="navigation-link" href="about.html">О Седоне</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="hotels.html">Гостиницы</a>
                     </li>     
                 </ul>
-                <div>
-                    <a class="button" href="#">
-                    <img class="logo" src="https://htmlacademy.ru/" alt="Логотип Седона">
+                <a class="logo-wrapper" href="#">
+                <img class="logo" src="https://htmlacademy.ru/" alt="Логотип Седона">
                 </a>
-                </div>
-                <ul class="navigation-list" class="navigation-user">
+                <ul class="navigation-list navigation-user">
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">
                             <span class="visually-hidden">
-                                Поиск
+                            Поиск
                             </span>
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">
-                        <span class="vissualy-hidden">
-                        Избранное
-                        </span>
-                        </a>
+                        <div>
+                            <a class="navigation-link" href="#">
+                                <span class="vissualy-hidden">
+                                    Избранное
+                                </span>
+                                <span class="vissualy-hidden">12</span>
+                            </a>
+                        </div>
                     </li>
                     <li class="navigation-item">
-                        <button type="button" class="signin-button" id="signinButton">
-                        <span class="vissualy-hidden">
-                        Вход
-                        </span>
+                        <button class="signin-button" type="button" id="signinButton">
+                            <span>
+                            ХОЧУ СЮДА
+                            </span>
                         </button>
                     </li>     
                 </ul>
@@ -140,37 +142,30 @@
         </section>
         </main>
         <footer class="page-footer-title">
-            <section class="footer-social">
-                <h2 class="page-footer-title vissualy-hidden">Социальные сети</h2>
-                <ul class="footer-social-list">
-                    <li class="footer-social-item">
-                        <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <ul class="footer-social-list">
+                <li class="social-item">
+                    <a class="button" href="https://twitter.com/htmlacademy_ru">
                         <span class="vissualy-hidden">Твиттер</span>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="button" href="https://www.facebook.com/htmlacademy">
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button" href="https://www.facebook.com/htmlacademy">
                         <span class="vissualy-hidden">Фэйсбук</span>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
                         <span class="vissualy-hidden">Ютуб</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer-contacts">
-                <h1 class="vissualy-hidden">Контакты</h1>
-                <h2>+7 (812) 812-12-12</h2>
-            </section>
-            <section>
-            <div>
+                    </a>
+                </li>
+            </ul>
+            <h1 class="vissualy-hidden">Контакты</h1>
+            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <div class="copyright">
                 <a class="button" href="#">
-                <img class="logo-html" src="https://htmlacademy.ru/" alt="Логотип html">
+                    <img class="logo-html" src="https://htmlacademy.ru/" alt="Логотип html">
                 </a>
             </div>
-            </section>
         </footer>
     </body>
 </html>
