@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+    }
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+    }
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    }
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+    }
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    }
+.button {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase; 
+    }
+.signin-button {
+    color: white;
+    background-color: #756157;
+
+    }
+.navigation-link {font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    }
+.background-advantage {
+    background-image: url("../images/background-advantage.jpg");
+    background-position: top;
+    background-size: 1200px 485px;
+    background-repeat: no-repeat;
+    min-height: 485px;
+    }
+.advantages-content p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    }
+.advantages-content {
+    position: bottom;
+    }
+.advantages-item {
+    width: 400px;
+    height: 384px;
+    background-color: #82B3D3;
+    text-align:center;
+    
+}
+.advantage-title {
+    width: 400px;
+    height: 384px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+    .advantage-item-white {
+        color: white;
+    }
+        h3 {
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    }
+    li {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
