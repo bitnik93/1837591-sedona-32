@@ -28,18 +28,19 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
     }
+    html {
+        height: 100%;
+    }
 
 .list-reset {
     padding: 0%;
     margin: 0%;
     list-style: none;
 }
+a {
 
-body {
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    }
+    text-decoration: none;
+}
 
 .button {
     font-family: PT Sans;
@@ -58,15 +59,33 @@ body {
     min-height: 37px;;
     }
 
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .navigation-list {
     font-family: PT Sans;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;
 line-height: 26px;
+width: 415px;
 }
 
-.navigation-link {font-family: PT Sans;
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.navigation-user {
+    max-width: 300px;
+    margin-left: auto;
+}
+
+.navigation-link {
+    font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -76,13 +95,55 @@ line-height: 26px;
     text-decoration: underline;
 }
 
-.advantages-content {
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    }
+
+.main-container {
+        flex-grow: 1;
+    }
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    outline: 5px solid red;
+    outline-offset: -5px;
+}
+
+.advantages-background {
     background-image: url("../images/background-advantage.jpg");
     background-position: top;
     background-size: 1200px 485px;
     background-repeat: no-repeat;
-    min-height: 485px;
+    background-color: white;
+    min-height: 767px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 auto;
     }
+
+.advantages-background-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 auto;
+    min-height: 282px;
+}
+
+.advantages-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+
+}
 
 .advantages-content p {
     font-family: PT Sans;
@@ -129,6 +190,7 @@ line-height: 26px;
     background-color: #FFFFFF;
 }
 
+
 h3 {
     font-family: "PT Sans";
     font-style: normal;
@@ -137,6 +199,8 @@ h3 {
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
+    padding: 0%;
+    margin: 0%;
 }
 
 p {
@@ -146,6 +210,12 @@ p {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+}
+.hotels-search-container {
+    display: flex;
+    width: 575px;
+    margin: 0 auto;
+
 }
 
 .hotels-search {
@@ -171,6 +241,13 @@ p {
     background-color: #756157;
     width: 1200px;
     height: 417px;
+}
+
+.subscription-container {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+
 }
 
 .subscription {
