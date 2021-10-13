@@ -28,17 +28,27 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
     }
-    html {
+
+html {
         height: 100%;
-    }
+}
 
 .list-reset {
     padding: 0%;
     margin: 0%;
     list-style: none;
 }
-a {
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0)
+}
+
+a {
+    color:black;
     text-decoration: none;
 }
 
@@ -53,16 +63,34 @@ a {
     }
 
 .signin-button {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
     color: white;
     background-color: #756157;
     min-width: 160px;
     min-height: 37px;;
     }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    outline: 5px solid red;
+    outline-offset: -5px;
+
+}
+
 .navigation {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    
 }
 
 .navigation-list {
@@ -72,6 +100,7 @@ font-weight: bold;
 font-size: 20px;
 line-height: 26px;
 width: 415px;
+margin-right: auto;
 }
 
 .logo {
@@ -91,6 +120,7 @@ width: 415px;
     font-size: 20px;
     line-height: 26px;
     }
+
 .navigation-link-current {
     text-decoration: underline;
 }
@@ -113,11 +143,8 @@ body {
 .page-container {
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    margin: 0 auto;
-    outline: 5px solid red;
-    outline-offset: -5px;
 }
+
 
 .advantages-background {
     background-image: url("../images/background-advantage.jpg");
@@ -134,7 +161,8 @@ body {
 .advantages-background-title {
     display: flex;
     flex-direction: column;
-    margin-top: 0 auto;
+    margin-top: auto;
+    text-align: center;
     min-height: 282px;
 }
 
