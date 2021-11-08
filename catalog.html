@@ -65,55 +65,81 @@
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="catalog-filter-option">
                     <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Инфраструктура</legend>
-                    <ul class="catalog-filter-list list-reset">
-                        <li class="catalog-filter-item">
-                                <input class="program-option-input " type="checkbox" id="pool" name="choice_infrastructure" value="pool" checked>
-                                <label class="program-option-label" for="pool">Бассейн</label>
-                        </li>
-                        <li class="catalog-filter-item">
-                                <input class="program-option-input " type="checkbox" id="parking" name="choise_infrastructure" value="parking" checked>
-                                <label class="program-option-label" for="parking">Парковка</label>
+                        <legend class="catalog-filter-title">Инфраструктура</legend>
+                            <ul class="catalog-filter-list list-reset">
+                                <li class="catalog-filter-item">
+                                    <label class="program-option-label">
+                                        <input class="program-option-input visually-hidden" type="checkbox" id="pool" name="choice_infrastructure" value="pool" checked>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Бассейн</span>
+                                    </label>
+                                </li>
+                                <li class="catalog-filter-item">
+                                    <label class="program-option-label">
+                                        <input class="program-option-input visually-hidden" type="checkbox" id="parking" name="choise_infrastructure" value="parking" checked>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Парковка</span>
+                                    </label>
+                                </li>
+                                <li class="catalog-filter-item">
+                                    <label class="program-option-label">
+                                        <input class="program-option-input visually-hidden" type="checkbox" id="wi-fi" name="choise_infrastructure" value="wi-fi">
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Wi-Fi</span>
+                                    </label>
+                                </li>
+                            </ul>
+                    </fieldset>
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Тип жилья</legend>
+                        <ul class="catalog-filter-list list-reset">
+                            <li class="catalog-filter-item">
+                                <label class="program-option-label">
+                                    <input class="program-option-input visually-hidden" type="radio" id="hotel" name="choise_housing" value="hotel" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Гостиница</span>
+                                </label>
                             </li>
-                        <li class="catalog-filter-item">
-                                <input class="program-option-input " type="checkbox" id="wi-fi" name="choise_infrastructure" value="wi-fi">
-                                <label class="program-option-label" for="wi-fi">Wi-Fi</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Тип жилья</legend>
-                    <ul class="catalog-filter-list list-reset">
-                        <li class="catalog-filter-item">
-                                <input class="program-option-input " type="radio" id="hotel" name="choise_housing" value="hotel" checked>
-                                <label class="program-option-label" for="hotel">Гостиница</label>
-                        </li>
-                        <li class="catalog-filter-item">
-                                <input class="program-option-input " type="radio" id="motel" name="choise_housing" value="motel">
-                                <label class="program-option-label" for="motel">Мотель</label>
-                        </li>
-                        <li class="catalog-filter-item">
-                                <input class="program-option-input " type="radio" id="apartments" name="choise_housing" value="apartments">
-                                <label class="program-option-label" for="apartments">Апартаменты</label>
-                        </li>
-                    </ul>
-                </fieldset>
+                            <li class="catalog-filter-item">
+                                <label class="program-option-label">
+                                    <input class="program-option-input visually-hidden" type="radio" id="motel" name="choise_housing" value="motel">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Мотель</span>
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="program-option-label">
+                                    <input class="program-option-input visually-hidden" type="radio" id="apartments" name="choise_housing" value="apartments">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Апартаменты</span>
+                            </label>
+                            </li>
+                        </ul>
+                    </fieldset>
                 </div>
                 <div class ="catalog-filter-toggle">
                 <fieldset class="catalog-filter-group">
-                        <legend class="catalog-filter-title">Стоимость ₽</legend>
-                        <button class="range-toggle toggle-min visually-hidden" type="button">
-                            <span class="visually-hidden">Изменить минимальную цену</span>
-                        </button>
-                        <button class="range-toggle toggle-max visually-hidden" type="button">
-                            <span class="visually-hidden">Изменить максимальную цену</span>
-                        </button>
-                        <label class="catalog-filter-label">
-                            <input class="catalog-filter-input" type="number" name="min-price"><span class="min-price"> от</span>
-                        </label>
-                        <label class="catalog-filter-label">
-                            <input class="catalog-filter-input" type="number" name="min-price"><span class="max-price"> до</span>
-                        </label>
+                    <legend class="catalog-filter-title">Стоимость ₽</legend>
+                    <div class="range">
+                        <div class="range-wrapper-inputs">
+                            <label class="catalog-filter-label">
+                                <input class="catalog-filter-input-min" type="number" value="0" name="min-price"><span class="min-price"> от</span>
+                            </label>
+                            <label class="catalog-filter-label">
+                                <input class="catalog-filter-input-max" type="number" value="9000" name="max-price"><span class="max-price"> до</span>
+                            </label>
+                            </div>
+                            <div class="range-scale">
+                                <div class="range-bar" style="left: 0px; width: 227px; height: 4px">
+                                    <button class="range-toggle toggle-min" type="button">
+                                        <span class="visually-hidden">Изменить минимальную цену</span>
+                                    </button>
+                                    <button class="range-toggle toggle-max " type="button">
+                                        <span class="visually-hidden">Изменить максимальную цену</span>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
                 </fieldset>
                 </div>
                 <div class="buttons">
@@ -234,7 +260,7 @@
             </ul>
             <div class="pagination-hotels">
                     <span>Гостиниц на странице:</span>
-                    <select name="select2">
+                    <select class="select-hotels">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -252,7 +278,7 @@
         <div class="newsletter-container">
             <section class="newsletter">
                 <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-                <p class="newsletter-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <p class="newsletter-paragraph">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
                 <form class="newsletter-form" action="" method="post">
                     <label class="visually-hidden" for="newsletter-email">Подписаться</label>
                     <input class="field"  placeholder="ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
