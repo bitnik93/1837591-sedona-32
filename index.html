@@ -39,17 +39,17 @@
                             <span class="visually-hidden">Избранное</span>
                             <span class="container-favorites">12</span>
                         </a>
-                        <div class="popover popover-cart">
+                        <div class="popover"> <!-- добавьте класс popover-display, чтобы увидеть popover -->
                             <button class="popover-close-button button navigation-icon visually-hidden">
                                 <span class="visually-hidden">Закрыть</span>
                             </button>
                             <div class="popover-content">
-                                <h1 class="popover-title visually-hidden">Избранное</h1>
+                                <span class="popover-title visually-hidden">Избранное</span>
                                 <ul class="cart-items-list">
                                     <li class="cart-item">
                                         <a class="product-cart-link" href="product.html">
-                                            <img class="product-cart-image" src="images/hotel-2-small.svg" alt="Amara Resort & Spa">
-                                            <h2 class="product-cart-title">Amara Resort & Spa</h2>
+                                            <img class="product-cart-image" src="images/hotel-2-small.jpg" alt="Amara Resort & Spa">
+                                            <span class="product-cart-title">Desert Quail Inn</span>
                                             <p class="product-cart-paragraph">Мотель</p>
                                         </a>
                                         <button type="button" class="cart-item-button button">
@@ -58,8 +58,8 @@
                                     </li>
                                     <li class="cart-item">
                                         <a class="product-cart-link" href="product.html">
-                                            <img class="product-cart-image" src="images/hotel-2-small.svg" alt="Amara Resort & Spa">
-                                            <h2 class="product-cart-title">Villas at Poco Diablo</h2>
+                                            <img class="product-cart-image" src="images/hotel-3-small.jpg" alt="Amara Resort & Spa">
+                                            <span class="product-cart-title">Villas at Poco Diablo</span>
                                             <p class="product-cart-paragraph">Апартаменты</p>
                                         </a>
                                         <button type="button" class="cart-item-button button">
@@ -78,84 +78,83 @@
             </nav>
         </header>
         <main class="main-container main-index">
+          <h1 class="title-sedona visually-hidden">Гостиницы Седоны</h1>
             <div class="page-container">
                 <section class="advantages-background">
                     <div class="advantages-background-title">
-                        <h1 class="advantages-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+                        <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
                         <p class="advantages-background-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
                     </div>
                 </section>
                 <div class="advantages-container">
                     <section>
-                        <li class="advantages-list-item">
                             <ul class="advantages-unordered-list">
                                 <li class="advantages-item advantages-item-town">
                                     <div class="a-real-town advantage-item-blue">
-                                        <h2 class="advantage-title">Настоящий<br> городок</h2>
+                                        <h3 class="advantage-title">Настоящий<br> городок</h3>
                                         <span class="advantage-symbol">— №1 —</span>
                                         <p class="paragraph-title">Седона — не аттракцион<br> для туристов,там течет<br> своя жизнь</p>
                                     </div>
                                     <img class="photo-1" src="images/photo-1.jpg" width="800" height="384" alt="Фото городка 2.">
+                                    <ul class="advantages-item-list list-reset">
+                                        <li class="advantages-item advantage-item-light-gray home">
+                                            <h3 class="advantage-title-font">Жильё</h3>
+                                            <p class="advantages-paragraph-font">Рекомендуем пожить<br> в настоящем мотеле,<br> все как в кино!</p>
+                                        </li>
+                                        <li class="advantages-item advantages-item-white eating">
+                                            <h3 class="advantage-title-font">Еда</h3>
+                                            <p class="advantages-paragraph-font">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+                                        </li>
+                                        <li class="advantages-item advantage-item-light-gray souvenir">
+                                            <h3 class="advantage-title-font">Сувениры</h3>
+                                            <p class="advantages-paragraph-font">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <ul class="advantages-item-list list-reset">
-                                    <li class="advantages-item advantage-item-light-gray home">
-                                        <h2 class="advantage-title-font">Жилье</h2>
-                                        <p class="advantages-paragraph-font">Рекомендуем пожить<br> в настоящем мотеле,<br> все как в кино!</p>
-                                    </li>
-                                    <li class="advantages-item advantages-item-white eating">
-                                        <h2 class="advantage-title-font">Еда</h2>
-                                        <p class="advantages-paragraph-font">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
-                                    </li>
-                                    <li class="advantages-item advantage-item-light-gray souvenir">
-                                        <h2 class="advantage-title-font">Сувениры</h2>
-                                        <p class="advantages-paragraph-font">Не только китайского,<br> но и настоящего местного<br> производства!</p>
-                                    </li>
-                                </ul>
                                 <li class="advantages-item advantages-item-2 list-reset">
                                     <div class="diablo-bridge advantage-item-blue-2">
-                                        <h2 class="advantage-title">Там есть мост дьявола</h2>
+                                        <h3 class="advantage-title">Там есть<br> мост дьявола</h3>
                                         <span class="advantage-symbol">— №2 —</span>
-                                        <p class="paragraph-title">Да, по нему можно пройти! Если вы осмелитесь,разумеется </p>
+                                        <p class="paragraph-title">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется </p>
                                     </div>
                                     <img class="photo-2" src="images/photo-2.jpg" width="800" height="384" alt="Фото городка 2.">
                                 </li>
-                                <div class="advantages-list-container">
-                                    <li class="advantages-item advantage-item-light-gray list-reset">
-                                        <h2 class="advantage-title-font-item">Небольшая<br> площадь</h2>
-                                        <span>-№3-</span>
-                                        <p class="advantages-paragraph-font">Все достопримечательности<br> находятся очень близко</p>
-                                    </li>
-                                    <li class="advantages-item advantage-item-light-blue list-reset">
-                                        <h2 class="advantage-title-font-item">Красивая<br> дорога</h2>
-                                        <span>-№4-</span>
-                                        <p class="advantages-paragraph-font">Ехать в Седона из Лас-Вегаса<br> совсем не скучно!</p>
-                                    </li>
-                                    <li class="advantages-item advantage-item-light-gray list-reset">
-                                        <h2 class="advantage-title-font-item">Мало<br> туристов</h2>
-                                        <span>-№5-</span>
-                                        <p class="advantages-paragraph-font">Большинство едет в Гранд<br> Каньон и толпится там</p>
-                                    </li>
-                                </div>
+                                <li class="advantages-list-container">
+                                    <div class="advantages-item advantage-item-light-gray list-reset">
+                                        <h3 class="advantage-title-font-item">Небольшая<br> площадь</h3>
+                                        <span>— №3 —</span>
+                                        <p class="advantages-paragraph-font advantage-item-font">Все достопримечательности<br>&nbsp&nbsp находятся очень близко</p>
+                                    </div>
+                                    <div class="advantages-item advantage-item-light-blue list-reset">
+                                        <h3 class="advantage-title-font-item">Красивая<br> дорога</h3>
+                                        <span>— №4 —</span>
+                                        <p class="advantages-paragraph-font advantage-item-font">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+                                    </div>
+                                    <div class="advantages-item advantage-item-light-gray list-reset">
+                                        <h3 class="advantage-title-font-item">Мало<br> туристов</h3>
+                                        <span>— №5 —</span>
+                                        <p class="advantages-paragraph-font advantage-item-font">Большинство едет в Гранд<br> Каньон и толпится там</p>
+                                    </div>
+                                  </li>
                             </ul>
-                        </li>
                     </section>
                 </div>
                 <div class="hotels-search-container">
                     <section class="hotels-search">
-                        <h1 class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</h1>
-                        <p class="search-paragraph">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                        <div class="">
+                        <h2 class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+                        <p class="search-paragraph">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне&nbsp&nbsp&nbsp</p>
+                        <div class="product-search-container">
                             <a class="product-search-button" href="#">Поиск гостиницы в седоне</a>
                         </div>
                     </section>
                 </div>
                 <div class="subscription-container">
                     <section class="subscription">
-                        <h1 class="subscribe-article">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h1>
-                        <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+                        <h2 class="subscribe-article">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+                        <p class="subscribe-paragraph">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
                         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                             <label class="visually-hidden" for="newsletter-email">Подписаться</label>
-                            <input class="field" placeholder="ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                            <input class="field field-error" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required> <!-- добавьте класс field-error, чтобы увидеть ошибку даты -->
                             <button class="button newsletter-button" type="submit">Подписаться</button>
                         </form>
                     </section>
@@ -167,7 +166,7 @@
                 <ul class="footer-social-list list-reset">
                     <li class="footer-social-item">
                         <a class="button-social button-twitter" href="https://twitter.com/htmlacademy_ru">
-                            <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h18v15H0z"/></clipPath></defs></svg>
+                            <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" fill="currentColor"/></g><defs><clipPath id="twitter"><path fill="currentColor" d="M0 0h18v15H0z"/></clipPath></defs></svg>
                             <span class="visually-hidden">Твиттер</span>
                         </a>
                     </li>
@@ -184,7 +183,7 @@
                         </a>
                     </li>
                 </ul>
-                <h1 class="visually-hidden">Контакты</h1>
+                <span class="visually-hidden">Контакты</span>
                 <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
                 <div class="copyright">
                     <a class="button-html" href="https://htmlacademy.ru/">
@@ -195,31 +194,31 @@
             </div>
         </footer>
     </div>
-    <div class="modal-container modal-display"> <!-- вставьте класс modal-display, чтобы увидеть модальное меню -->
+    <div class="modal-container"> <!-- добавьте класс modal-display, чтобы увидеть модальное меню -->
         <section class="modal-content">
             <button class="modal-close-button">
                 <span class="visually-hidden">Закрыть</span>
             </button>
-            <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="field-group">
-                    <label for="arrival-date">Дата заезда</label>
+                    <label for="arrival-date">Дата заезда:</label>
                     <div class="input">
-                        <input class="date-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+                        <input class="date-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020"> <!-- добавьте класс date-form-field-error, чтобы увидеть ошибку даты -->
                         <button class="calendar">
                             <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#000"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
                         </button>
-                        <span class="error-date">Мы не можем отправить вас в прошлое.</span>
+                        <span class="error-date">Мы не можем отправить вас в прошлое.</span>  <!-- добавьте класс error-display-none, чтобы убрать ошибку даты -->
                     </div>
                 </div>
                 <div class="field-group">
-                    <label for="departure-date">Дата выезда</label>
+                    <label for="departure-date">Дата выезда:</label>
                     <div class="input">
-                        <input class="date-form-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
+                        <input class="date-form-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021"> <!-- добавьте класс date-form-field-error, чтобы увидеть ошибку даты -->
                         <button class="calendar">
                             <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#000"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
                         </button>
-                        <span class="date-info">На эти даты есть свободные номера. Пока есть.</span>
+                        <span class="date-info">На эти даты есть свободные номера. Пока есть.</span> <!-- добавьте класс date-display-none, чтобы убрать ошибку даты -->
                     </div>
                 </div>
                 <div class="people">
@@ -238,7 +237,7 @@
                     <div class="children">
                         <label class="people-title children-label" for="children">Дети:</label>
                         <div class="info-button">
-                            <button class="info" type="button"><span class="visually-hidden">Посмотреть дополнительную информацию</span><svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="currentColor"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a"><path fill="currentcolor" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg></button>
+                            <button class="info" type="button"><span class="visually-hidden">Посмотреть дополнительную информацию</span><svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="currentColor"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="info-icon"><path fill="currentcolor" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg></button>
                             <div class="dropdown-info">
                                 <p class="info-paragraph">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                             </div>
