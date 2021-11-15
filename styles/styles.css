@@ -53,7 +53,7 @@ a {
 }
 
 .button {
-    font-family: PT Sans;
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -66,7 +66,7 @@ a {
 }
 
 .signin-button {
-    font-family: PT Sans;
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -91,7 +91,7 @@ a {
 }
 
 .signin-button:active {
-    background: 615048;
+    background: #615048;
     border-radius: 4px;
     font-weight: bold;
     font-size: 16px;
@@ -125,7 +125,7 @@ a {
 }
 
 .navigation-list {
-    font-family: PT Sans;
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -138,6 +138,14 @@ a {
     padding-bottom: 4px;
     margin: 0;
     list-style: none;
+}
+
+.logo-wrapper:focus {
+    box-shadow: inset 0 0 0 3px #82B3D3;
+    color: #756257;
+    border-radius: 10px;
+    outline: none;
+
 }
 
 .navigation-item {
@@ -199,7 +207,7 @@ a {
 }
 
 .navigation-user {
-    font-family: PT Sans;
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -255,7 +263,7 @@ a {
     top: -3px;
     right: -1px;
     background-color: #7DB54F;
-    font-family: PT Sans;
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -266,7 +274,7 @@ a {
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-size: 18px;
     line-height: 24px;
     padding: 0%;
@@ -277,13 +285,34 @@ body {
 }
 
 .advantages-background {
-    background-image: url("../images/welcome.svg"), url("../images/background-advantage.jpg");
+    background:coral;
+    background-image: url("../images/background-advantage.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 51px, 100% 0;
-    background-color: white;
-    min-height: 767px;
+    background-position: 50% 0, 100% 0;
+    background-color: rgb(0, 0, 0);
+    min-height: 485px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.advantages-background:after {
+    margin-bottom: -104px;
+    position: absolute;
+    left: 59px;
+    top: 453px;
+    background: url("../images/background-bottom.png");
+    background-repeat: no-repeat;
+    background-position: 40px 40px;
+    content: "";
+    width: 1240px;
+    min-height: 104px;
+
+}
+
+.welcome-background {
+    margin-top: 51px;
+
 }
 
 .advantages-background-title {
@@ -292,7 +321,8 @@ body {
     justify-content: flex-end;
     margin-top: auto;
     text-align: center;
-    margin-top: 546px;
+    margin-top: 61px;
+    align-items: center;
 }
 
 .advantages-title {
@@ -310,6 +340,7 @@ body {
     line-height: 36px;
     text-align: center;
     margin: 0;
+    margin-bottom: 80px;
 }
 
 .advantages-container {
@@ -385,13 +416,13 @@ body {
 .advantages-item-town {
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 384px;
+    grid-template-rows: min-content;
 }
 
 .advantages-item-2 {
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 384px;
+    grid-template-rows: min-content;
 }
 
 .a-real-town {
@@ -405,39 +436,41 @@ body {
 .photo-1 {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    height: 100%;
 }
 
 .photo-2 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    height: 100%;
 }
 
 .advantages-item-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 384px;
+    grid-template-rows: min-content;
 }
 
 .advantages-list-container {
     padding:0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 384px;
+    grid-template-rows: min-content;
 }
 
 .advantage-item-light-blue {
     background-color: #E6F0F6;
-    height:384px;
+    min-height:384px;
 }
 
 .advantage-item-light-gray {
     background-color: #F0F6FA;
-    height:384px;
+    min-height:384px;
 }
 
 .advantages-item-white {
     background-color: #FFFFFF;
-    height:384px;
+    min-height:384px;
 }
 
 .advantage-title {
@@ -630,6 +663,7 @@ body {
 
 .subscription {
     background-image: url("../images/subscription-background.jpg");
+    background-color: black;
     color: white;
     width: 1200px;
     height: 411px;
@@ -651,15 +685,14 @@ body {
     line-height: 26px;
     text-align: center;
     margin-bottom: 47px;
-
 }
 
 .field {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 26px;
+    font-family: "PT Sans", serif, sans-serif, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
     display: flex;
     align-items: center;
     background: #F2F2F2;
@@ -684,8 +717,9 @@ body {
     border-radius: 10px 0px 0px 10px;
     outline: none;
 }
+
 .field-error:focus {
-  box-shadow: 0 0 0 3px #FF5757;
+    box-shadow: 0 0 0 3px #FF5757;
 }
 
 .newsletter {
@@ -693,7 +727,6 @@ body {
     min-height: 363px;
     margin: auto;
 }
-
 
 .newsletter-form {
   margin-top: 47px;
@@ -838,9 +871,11 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("../images/catalog-background.jpg");
+    background-color:black;
     background-repeat: no-repeat;
+    background-size: cover;
     min-width: 1200px;
-    min-height: 411px;
+    min-height: 408px;
 }
 
 .inner-header {
@@ -859,15 +894,16 @@ body {
     margin-top: 32px;
 }
 
-.breadcrumps {
+.breadcrumbs {
     display: flex;
 }
 
-.breadcrumps-item {
+.breadcrumbs-item {
+  position: relative;
     margin-right: 5px;
 }
 
-.breadcrumps-link-home {
+.breadcrumbs-link-home {
     display: flex;
     position: relative;
     margin-left: 2px;
@@ -876,41 +912,41 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-.breadcrumps-link-home:hover {
+.breadcrumbs-link-home:hover {
     color: #cddde9;
 }
 
-.breadcrumps-link-home:focus {
+.breadcrumbs-link-home:focus {
     box-shadow: inset 0 0 0 3px #83B3D3;
     border-radius: 4px;
     outline: none;
 }
 
-.breadcrumps-link-home:active {
+.breadcrumbs-link-home:active {
     opacity: 0.3;
 }
 
-.breadcrumps-link {
-    position: absolute;
-    top: 167px;
+.breadcrumbs-link {
+  position: relative;
+    top: -5px;
     padding: 5px 10px;
 }
 
-.breadcrumps-link:hover {
+.breadcrumbs-link:hover {
     opacity: 0.6;
 }
 
-.breadcrumps-link:focus {
+.breadcrumbs-link:focus {
     box-shadow: inset 0 0 0 3px #83B3D3;
     border-radius: 4px;
     outline: none;
 }
 
-.breadcrumps-link:active {
+.breadcrumbs-link:active {
     opacity: 0.3;
 }
 
-.breadcrumps-link-home:after {
+.breadcrumbs-link-home:after {
     position: absolute;
     width: 6px;
     height: 8px;
@@ -1213,13 +1249,7 @@ input:focus+.control-mark {
     margin-left: 81px;
 }
 
-section h1 {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 39px;
-}
-
-a.breadcrumps-link {
+a.breadcrumbs-link {
     color: white;
     font-weight: normal;
     font-size: 16px;
@@ -1288,7 +1318,7 @@ a.breadcrumps-link {
     display: flex;
     justify-content: space-between;
     height: 48px;
-    margin-top: 41px;
+    margin-top: 44px;
     margin-bottom: 73px;
     margin-right: 72px;
     margin-left: 71px;
@@ -1306,7 +1336,7 @@ a.breadcrumps-link {
     border-radius: 4px;
     appearance: none;
     padding-left: 17px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
@@ -1338,6 +1368,7 @@ a.breadcrumps-link {
 }
 
 .sorting-items {
+    display: flex;
     margin-left: 63px;
 }
 
@@ -1363,7 +1394,7 @@ a.breadcrumps-link {
     min-width: 48px;
     min-height: 48px;
     background-repeat: no-repeat;
-    margin-left: 3px;
+    margin-left: 8px;
 }
 
 .card:hover,
@@ -1379,7 +1410,7 @@ a.breadcrumps-link {
     min-width: 48px;
     min-height: 48px;
     background-repeat: no-repeat;
-    margin-left: 3px;
+    margin-left: 8px;
 }
 
 .card-list:hover,
@@ -1395,14 +1426,14 @@ a.breadcrumps-link {
     margin: auto;
     margin-bottom: 58px;
     width: 1056px;
-    height: 123px
+    min-height: 123px
 }
 
 .product-container {
     margin-left: 37px;
     display: grid;
     grid-template-columns: min-content min-content;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: max-content 1fr 1fr;
     column-gap: 8px;
 }
 
@@ -1447,7 +1478,6 @@ a.breadcrumps-link {
 .product-card-item {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    margin-top: -13px;
 }
 
 .product-card-price {
@@ -1456,7 +1486,6 @@ a.breadcrumps-link {
     line-height: 23px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    margin-top: -13px;
     margin-left: -2px;
 
 }
@@ -1476,7 +1505,7 @@ a.breadcrumps-link {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 1px;
+    margin-top: 8px;
     margin-left: -1px;
 }
 
@@ -1502,7 +1531,7 @@ a.breadcrumps-link {
     background-color: #83B3D3;
     min-width: 160px;
     height: 37px;
-    margin-top: 1px;
+    margin-top: 8px;
 }
 
 .button-favorite:hover {
@@ -1530,7 +1559,7 @@ a.breadcrumps-link {
     background-color: #7DB54F;
     min-width: 160px;
     height: 37px;
-    margin-top: 1px;
+    margin-top: 8px;
 }
 
 .button-cancel:hover {
@@ -1758,7 +1787,7 @@ a.breadcrumps-link {
     box-sizing: border-box;
     width: 400px;
     min-height: 232px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", serif, sans-serif, monospace;
     color: #000000;
     background-color: #ffffff;
     border-radius: 20px;
@@ -1986,7 +2015,7 @@ a.breadcrumps-link {
     margin: 0;
     margin-top: 6px;
     margin-left: -3px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-weight: bold;
     font-size: 30px;
     line-height: 40px;
@@ -2032,7 +2061,7 @@ a.breadcrumps-link {
 }
 
 .date-form-field::placeholder {
-    font-family: "PT Sans";
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -2128,7 +2157,7 @@ a.breadcrumps-link {
 }
 
 .adults-children-input {
-    font-family: "PT Sans";
+    font-family: "PT Sans", serif, sans-serif, monospace;
     width: 53px;
     height: 50px;
     padding-left: 4px;
@@ -2280,7 +2309,7 @@ a.breadcrumps-link {
     border: none;
     border-radius: 10px;
     text-align: center;
-    font-family: "PT Sans";
+    font-family: "PT Sans", serif, sans-serif, monospace;
     font-weight: bold;
     font-size: 20px;
     line-height: 40px;
