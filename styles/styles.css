@@ -323,6 +323,7 @@ body {
     text-align: center;
     padding-top: 61px;
     align-items: center;
+    background-color: white;
 }
 
 .advantages-title {
@@ -770,6 +771,7 @@ body {
 }
 
 .footer-social-item {
+    display: flex;
     margin-right: 4px
 }
 
@@ -1047,7 +1049,6 @@ body {
     margin-bottom: 30px;
     padding-left: 1px;
 }
-
 
 .catalog-filter-item {
     font-weight: normal;
@@ -1465,7 +1466,6 @@ a.breadcrumbs-link {
 .product-card-item {
     margin-bottom: 24px;
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
 }
 
 .product-card-price {
@@ -1474,7 +1474,6 @@ a.breadcrumbs-link {
     font-size: 18px;
     line-height: 23px;
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
     margin-left: -2px;
 }
 
@@ -1482,7 +1481,6 @@ a.breadcrumbs-link {
     display: grid;
     place-items: center;
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
     background: #756257;
     color: #fff;
     min-width: 151px;
@@ -1514,7 +1512,6 @@ a.breadcrumbs-link {
 
 .button-favorite {
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
     color: white;
     background-color: #83B3D3;
     min-width: 160px;
@@ -1826,31 +1823,14 @@ a.breadcrumbs-link {
 
 .cart-item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 25px;
-}
-
-/* .cart-item+.cart-item {
-    margin-top: 22px;
-} */
-
-.popover-line {
-    display: grid;
-    grid-template-columns:  48px auto;
-    column-gap: 17px;
-    width: 100%;
 }
 
 .product-cart-link {
     display:flex;
     width: 310px;
-    /* display: grid;
-    grid-template-columns: 48px max-content;
-    grid-template-rows: 25px 25px;
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    justify-self: start;
-    padding-right: auto; */
 }
 
 .product-cart-image {
@@ -1861,12 +1841,10 @@ a.breadcrumbs-link {
     display: flex;
     flex-direction: column;
     margin-left: 17px;
-    margin-top: 11px;
+    margin-top: 3px;
 }
 
 .product-cart-link:hover {
-    box-shadow: 0 0 0 3px #83B3D3;
-    border-radius: 4px;
     opacity: 0.6;
 }
 
@@ -1907,31 +1885,16 @@ a.breadcrumbs-link {
 }
 
 .product-cart-title {
-    /* margin: 0;
-    display: flex;
-    align-items: center;
-    margin-left: 17px;
-    padding: 0;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2; */
     font-size: 18px;
-    line-height: 1px;
+    line-height: 1;
     text-transform:initial;
-    margin-bottom: 21px;
+    margin-bottom: 3px;
 }
 
 .type-of-hotel {
-    /* margin: 0;
-    margin-top: -10px;
-    display: flex;
-    align-items: center;
-    margin-left: 17px;
-    padding: 0;
-    grid-row: 2 / 3;
-    grid-column: 2 / 3; */
     font-weight: normal;
     font-size: 16px;
-    line-height: 1px;
+    line-height: 1;
     text-align: left;
     text-transform: capitalize;
 }
@@ -1941,7 +1904,7 @@ a.breadcrumbs-link {
     place-items: center;
     background: #756257;
     width: 400px;
-    height: 60px;
+    min-height: 60px;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
     font-weight: bold;
@@ -1975,6 +1938,7 @@ a.breadcrumbs-link {
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
     display: none;
+    z-index: 3;
 }
 
 .modal-display {
