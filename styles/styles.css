@@ -1,7 +1,7 @@
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
-    font-weigt: 400;
+    font-weight: 400;
     src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
@@ -26,6 +26,22 @@
     font-style: italic;
     font-weight: 700;
     src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Miniature";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/miniature.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Miniature";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/miniature.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -119,7 +135,7 @@ a {
 }
 
 .navigation-list {
-    font-family: "PT Sans", serif, sans-serif, monospace;
+    font-family: "PT Sans", "Miniature" sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -282,7 +298,6 @@ body {
     flex-direction: column;
     min-height: 100%;
     background:#f2f2f2;
-    min-width: 1280px;
 }
 
 .advantages-background {
@@ -291,7 +306,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0, 100% 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #82b3d3;
     min-height: 485px;
     display: flex;
     flex-direction: column;
@@ -653,7 +668,7 @@ body {
 
 .subscription {
     background-image: url("../images/subscription-background.jpg");
-    background-color: black;
+    background-color: #496c80;
     background-size: cover;
     color: white;
     width: 1200px;
@@ -758,6 +773,7 @@ body {
     min-height: 120px;
     align-items: center;
     justify-content: space-between;
+    background-color: #ffffff;
 }
 
 .footer-social-list {
@@ -862,11 +878,15 @@ body {
 
 /* Catalog */
 
+.main-container {
+    background-color:#ffffff;
+}
+
 .catalog-products {
     display: flex;
     flex-direction: column;
     background-image: url("../images/catalog-background.jpg");
-    background-color:black;
+    background-color:#4b6075;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 1200px;
